@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+body {
+    margin:0;
+    margin-left: 5px;
+    margin-top: 5px;
+    /* background: linear-gradient(10deg, #d52385, #d452ee, #973ce7, #472ac9); */
+    background: linear-gradient(10deg, #1e78e0, #46b9c6, #32c7b6, #2ac381);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 100vh;
+    font-family: 'Exo', sans-serif;
+    font-size: 12px;
+    color: white;
+    
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.section2 {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3px;
+    margin-right: 5px;
+}
+
+
+.movie_names {
+    display:flex;
+    color: white;
+    cursor: pointer;
+    list-style: none;
+    transition: 0.2s ease-in;
+    margin: 0;
+    padding-left: 3px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 1rem;
+}
+
+.movie_names:hover {
+    color: rgb(215, 215, 215);
+}
+
+.movie_names:active {
+    color: rgb(187, 187, 187);
+}
+
+#movieName {
+    margin-bottom: 10px;
+    width: 200px;
+    background-color: rgb(96, 96, 96);
+    color:white;
+    border-color: rgb(96, 96, 96);
+    border-style: solid;
+}
+
+#search {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: rgb(113, 113, 113);
+    color:white;
+    height: 19px;
+    width: 70px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+}
+
+#search:hover {
+    background-color: rgb(96, 96, 96);
+}
+
+#search:active {
+    background-color: rgb(77, 77, 77);
+}
